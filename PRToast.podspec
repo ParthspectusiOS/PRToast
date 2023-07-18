@@ -14,6 +14,6 @@ Use for Custom toast with open top or bottom!
   s.source           = { :git => 'https://github.com/ParthspectusiOS/PRToast.git', :tag => s.version.to_s }
  
   s.ios.deployment_target = '13.0'
-  s.source_files = 'Classes/*.{swift}'
+  s.source_files = 'PRToastView/*.{swift}'
  
 end

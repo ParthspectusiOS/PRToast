@@ -69,14 +69,14 @@ public class PRToast:UIView {
         
         if descripations.isEmpty {
             self.lblDescripation.isHidden = true
-            let viewHeight = self.lblTitle.frame.height + 36
+             viewHeight = self.lblTitle.frame.height + 36
 
         }else {
             self.lblDescripation.text = descripations
             self.lblDescripation.numberOfLines = 2
             self.lblDescripation.textColor = textColor
             self.lblDescripation.sizeToFit()
-            let viewHeight = self.lblTitle.frame.height + 36 + self.lblDescripation.frame.height
+            viewHeight = self.lblTitle.frame.height + 36 + self.lblDescripation.frame.height
 
         }
         if showTopOrBottomSide == "Top" {
