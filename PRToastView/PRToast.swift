@@ -19,10 +19,12 @@ public class PRToast:UIView {
    
     public override func awakeFromNib() {
         super.awakeFromNib()
+        self.imgForLeft.isHidden = true
+        self.imgForRight.isHidden = true
         self.viewForPRToast.layer.cornerRadius = 12.5
         self.viewForPRToast.layer.masksToBounds = true
     }
-    public static func showToastWith(title: String,descripation:String, backgroundColor : UIColor = .red, bgColorAlpha: CGFloat = 0.7, textColor: UIColor = .white, screenTime: TimeInterval = 3.0,showTopOrBottomSide:String, dismissHandler: (()->Void)? = nil) {
+    public static func showToastWith(title: String,descripation:String, backgroundColor : UIColor = .red, bgColorAlpha: CGFloat = 0.7, textColor: UIColor = .white,leftSideImage:UIImage?,rightSideImage:UIImage?, screenTime: TimeInterval = 3.0,showTopOrBottomSide:String, dismissHandler: (()->Void)? = nil) {
         
         DispatchQueue.main.async {
             
@@ -30,7 +32,7 @@ public class PRToast:UIView {
                 return
             }
             
-            toastView.manageFrameAndDataWith(title: title,descripations:descripation, backgroundColor: backgroundColor, bgColorAlpha: bgColorAlpha, textColor: textColor,showTopOrBottomSide:showTopOrBottomSide)
+            toastView.manageFrameAndDataWith(title: title,descripations:descripation, backgroundColor: backgroundColor, bgColorAlpha: bgColorAlpha, textColor: textColor, showTopOrBottomSide:showTopOrBottomSide, rightSideImage: rightSideImage ?? UIImage(), leftSideImage: leftSideImage ?? UIImage())
             toastView.alpha = 0
         
             UIApplication.shared.windows[0].addSubview(toastView)
@@ -46,7 +48,7 @@ public class PRToast:UIView {
         }
     }
     
-    fileprivate func manageFrameAndDataWith(title: String,descripations:String, backgroundColor : UIColor = .black, bgColorAlpha: CGFloat = 0.7, textColor: UIColor = .white,showTopOrBottomSide:String){
+    fileprivate func manageFrameAndDataWith(title: String,descripations:String, backgroundColor : UIColor = .black, bgColorAlpha: CGFloat = 0.7, textColor: UIColor = .white,showTopOrBottomSide:String,rightSideImage:UIImage?,leftSideImage:UIImage?){
         
         self.lblTitle.text = title
         self.lblTitle.numberOfLines = 2
@@ -55,6 +57,16 @@ public class PRToast:UIView {
         self.lblTitle.sizeToFit()
         
         var viewHeight:CGFloat = 0.0
+        
+        if leftSideImage != nil {
+            self.imgForLeft.isHidden = false
+            self.imgForLeft.image = leftSideImage
+        }
+        if rightSideImage != nil {
+            self.imgForRight.isHidden = false
+            self.imgForRight.image = rightSideImage
+        }
+        
         if descripations.isEmpty {
             self.lblDescripation.isHidden = true
             let viewHeight = self.lblTitle.frame.height + 36

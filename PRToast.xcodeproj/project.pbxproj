@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A668D5112A66866200B48A15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A668D50F2A66866200B48A15 /* Main.storyboard */; };
 		A668D5162A66866500B48A15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A668D5142A66866500B48A15 /* LaunchScreen.storyboard */; };
-		A668D5462A668AD400B48A15 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A668D5452A668AD400B48A15 /* Info.plist */; };
 		A668D5482A668B3800B48A15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A668D5472A668B3800B48A15 /* ViewController.swift */; };
 		A668D54A2A668B4700B48A15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A668D5492A668B4700B48A15 /* Assets.xcassets */; };
 		A668D54D2A668B5700B48A15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A668D54B2A668B5600B48A15 /* AppDelegate.swift */; };
@@ -17,29 +16,10 @@
 		A668D5552A6690D900B48A15 /* PRToast.xib in Resources */ = {isa = PBXBuildFile; fileRef = A668D5542A6690D900B48A15 /* PRToast.xib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A668D51D2A66866500B48A15 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A668D4FE2A66866100B48A15 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A668D5052A66866200B48A15;
-			remoteInfo = PRToast;
-		};
-		A668D5272A66866600B48A15 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A668D4FE2A66866100B48A15 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A668D5052A66866200B48A15;
-			remoteInfo = PRToast;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		A668D5062A66866200B48A15 /* PRToast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PRToast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A668D5102A66866200B48A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A668D5152A66866500B48A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A668D51C2A66866500B48A15 /* PRToastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PRToastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A668D5262A66866600B48A15 /* PRToastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PRToastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A668D5452A668AD400B48A15 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A668D5472A668B3800B48A15 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A668D5492A668B4700B48A15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,20 +30,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		A668D5032A66866200B48A15 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A668D5192A66866500B48A15 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A668D5232A66866600B48A15 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -90,8 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				A668D5062A66866200B48A15 /* PRToast.app */,
-				A668D51C2A66866500B48A15 /* PRToastTests.xctest */,
-				A668D5262A66866600B48A15 /* PRToastUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,42 +122,6 @@
 			productReference = A668D5062A66866200B48A15 /* PRToast.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A668D51B2A66866500B48A15 /* PRToastTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A668D5332A66866600B48A15 /* Build configuration list for PBXNativeTarget "PRToastTests" */;
-			buildPhases = (
-				A668D5182A66866500B48A15 /* Sources */,
-				A668D5192A66866500B48A15 /* Frameworks */,
-				A668D51A2A66866500B48A15 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A668D51E2A66866500B48A15 /* PBXTargetDependency */,
-			);
-			name = PRToastTests;
-			productName = PRToastTests;
-			productReference = A668D51C2A66866500B48A15 /* PRToastTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A668D5252A66866600B48A15 /* PRToastUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A668D5362A66866600B48A15 /* Build configuration list for PBXNativeTarget "PRToastUITests" */;
-			buildPhases = (
-				A668D5222A66866600B48A15 /* Sources */,
-				A668D5232A66866600B48A15 /* Frameworks */,
-				A668D5242A66866600B48A15 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A668D5282A66866600B48A15 /* PBXTargetDependency */,
-			);
-			name = PRToastUITests;
-			productName = PRToastUITests;
-			productReference = A668D5262A66866600B48A15 /* PRToastUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,18 +135,10 @@
 					A668D5052A66866200B48A15 = {
 						CreatedOnToolsVersion = 14.2;
 					};
-					A668D51B2A66866500B48A15 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = A668D5052A66866200B48A15;
-					};
-					A668D5252A66866600B48A15 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = A668D5052A66866200B48A15;
-					};
 				};
 			};
 			buildConfigurationList = A668D5012A66866100B48A15 /* Build configuration list for PBXProject "PRToast" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -231,8 +151,6 @@
 			projectRoot = "";
 			targets = (
 				A668D5052A66866200B48A15 /* PRToast */,
-				A668D51B2A66866500B48A15 /* PRToastTests */,
-				A668D5252A66866600B48A15 /* PRToastUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,25 +160,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A668D5462A668AD400B48A15 /* Info.plist in Resources */,
 				A668D5162A66866500B48A15 /* LaunchScreen.storyboard in Resources */,
 				A668D5112A66866200B48A15 /* Main.storyboard in Resources */,
 				A668D5552A6690D900B48A15 /* PRToast.xib in Resources */,
 				A668D54A2A668B4700B48A15 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A668D51A2A66866500B48A15 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A668D5242A66866600B48A15 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,34 +180,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A668D5182A66866500B48A15 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A668D5222A66866600B48A15 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A668D51E2A66866500B48A15 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A668D5052A66866200B48A15 /* PRToast */;
-			targetProxy = A668D51D2A66866500B48A15 /* PBXContainerItemProxy */;
-		};
-		A668D5282A66866600B48A15 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A668D5052A66866200B48A15 /* PRToast */;
-			targetProxy = A668D5272A66866600B48A15 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A668D50F2A66866200B48A15 /* Main.storyboard */ = {
@@ -376,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -430,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -445,8 +321,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZLZW45UCR6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PRToast/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -454,14 +332,15 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cafeteria.emenuapp.PRToast;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prtoast.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -473,8 +352,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZLZW45UCR6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PRToast/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -482,89 +363,18 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cafeteria.emenuapp.PRToast;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prtoast.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		A668D5342A66866600B48A15 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cafeteria.emenuapp.PRToastTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PRToast.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PRToast";
-			};
-			name = Debug;
-		};
-		A668D5352A66866600B48A15 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cafeteria.emenuapp.PRToastTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PRToast.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PRToast";
-			};
-			name = Release;
-		};
-		A668D5372A66866600B48A15 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cafeteria.emenuapp.PRToastUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PRToast;
-			};
-			name = Debug;
-		};
-		A668D5382A66866600B48A15 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cafeteria.emenuapp.PRToastUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PRToast;
 			};
 			name = Release;
 		};
@@ -585,24 +395,6 @@
 			buildConfigurations = (
 				A668D5312A66866600B48A15 /* Debug */,
 				A668D5322A66866600B48A15 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A668D5332A66866600B48A15 /* Build configuration list for PBXNativeTarget "PRToastTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A668D5342A66866600B48A15 /* Debug */,
-				A668D5352A66866600B48A15 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A668D5362A66866600B48A15 /* Build configuration list for PBXNativeTarget "PRToastUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A668D5372A66866600B48A15 /* Debug */,
-				A668D5382A66866600B48A15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
