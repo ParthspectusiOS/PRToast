@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        PRToast.showToastWith(title: "Hello", descripation: "Hii", leftSideImage: UIImage(named: "ic_person"), rightSideImage: nil, showTopOrBottomSide: "Bottom")
     }
 
 
