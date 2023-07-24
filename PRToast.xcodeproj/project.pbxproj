@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A65AECA52A6E7AD300B91771 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65AECA42A6E7AD300B91771 /* Extension.swift */; };
 		A668D5112A66866200B48A15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A668D50F2A66866200B48A15 /* Main.storyboard */; };
 		A668D5162A66866500B48A15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A668D5142A66866500B48A15 /* LaunchScreen.storyboard */; };
 		A668D54A2A668B4700B48A15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A668D5492A668B4700B48A15 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A65AECA42A6E7AD300B91771 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		A668D5062A66866200B48A15 /* PRToast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PRToast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A668D5102A66866200B48A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A668D5152A66866500B48A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,8 +45,8 @@
 			isa = PBXGroup;
 			children = (
 				A668D54F2A668B7B00B48A15 /* PRToastView */,
-				A668D53F2A668A8000B48A15 /* Assets */,
 				A668D5422A668AA400B48A15 /* Controllers */,
+				A668D53F2A668A8000B48A15 /* Assets */,
 				A668D53A2A668A5800B48A15 /* AppConnstant */,
 				A668D5392A668A3700B48A15 /* Storyboard */,
 				A669504C2A67BF1600107DBF /* Info.plist */,
@@ -96,6 +98,7 @@
 		A668D54F2A668B7B00B48A15 /* PRToastView */ = {
 			isa = PBXGroup;
 			children = (
+				A65AECA42A6E7AD300B91771 /* Extension.swift */,
 				A668D5522A668EF200B48A15 /* PRToast.swift */,
 				A668D5542A6690D900B48A15 /* PRToast.xib */,
 			);
@@ -177,6 +180,7 @@
 				A669504A2A67BEB300107DBF /* AppDelegate.swift in Sources */,
 				A66950492A67BEAE00107DBF /* ViewController.swift in Sources */,
 				A66950482A67BEA700107DBF /* PRToast.swift in Sources */,
+				A65AECA52A6E7AD300B91771 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
